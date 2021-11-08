@@ -1,0 +1,42 @@
+
+#login{
+    max-width:50px;
+    height:30px;
+    margin:auto;
+    margin-top: 150px;
+    
+}
+
+.saibamais{
+	color:#6E00EE;
+	font-size:12px;
+	text-decoration:none;
+}
+ 
+h1{
+	font-family:'verdana';
+	font-size:25px;
+    font-weight: bold;
+    margin-left: 3%;
+    margin:auto;
+    color:white;
+}
+h2{
+    font-family:'verdana';
+    font-size:10px;
+    font-weight: bold;
+    margin-left: 3%;
+    color:white
+}
+
+#container{
+    max-width:600px;
+    margin:auto;
+    text-align: center;
+    text-indent: justify;
+}
+
+#form{
+    margin:auto;
+
+}

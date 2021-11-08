@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberdesk Checkout</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+    body{
+        font-family:'Heebo',sans-serif;
+    }
+
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+    }
+    
+    #topo{
+        width:100%;
+        height:auto;
+        background-color: #000;
+        float:left;
+        margin-bottom:2.5%;
+    }
+
+    #logo{
+        width:auto;
+        height:auto;
+        float:left;
+        margin: 0 0 0 42.5%;
+        display:block;
+        /*border: 1px solid green.*/
+    }
+
+    #logo img{
+        width:170px;
+        height:75px;
+        padding:5px;
+    }
+
+    #icons{
+        width:6.5%;
+        height:auto;
+        position:relative;
+        /*transform: translate(-10%, -30%);*/
+        /*border:1px solid yellow;*/
+        display:inline-block;
+        margin: 1.5% 5% 0 0;
+    }
+
+    #icons img{
+        width:30%;
+        height:auto;
+        padding:3px;
+        color:green;
+        display:inline-block;
+        position: relative;
+    }
+
+    #domination{
+        width:60%;
+        height:auto;
+        margin:auto;
+    }
+
+    .row{
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flexbox: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    .col-25{
+        -ms-flex:25%; /* IE10 */
+        flex:25%;
+    }
+
+    .col-50{
+        -ms-flex:50%;/* IE10 */
+        flex:50%;
+    }
+
+    .col-75{
+        -ms-flex:75%;/* IE10 */
+        flex:75%;
+    }
+
+    .col-25,.col-50,.col-75{
+        padding: 0 16px;
+    }
+
+    .container{
+        background-color: #f2f2f2;
+        padding:5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+    }
+
+    input[type="text"]{
+        width:100%;
+        margin-bottom:20px;
+        padding:12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    
+    label{
+        margin-bottom:10px;
+        display:block;
+    }
+
+    .icon-container{
+        margin-bottom:20px;
+        padding:7px 0;
+        font-size:24px;
+    }
+
+.btn{
+    background-color: #4CAF50;
+    color:white;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    width:100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover{
+    background-color:#45a049;
+}
+
+a{
+    color: #2196F3;
+}
+
+hr{
+    border: 1px solid lightgrey;
+}
+
+span.price{
+    float:right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next ot each other (also chance the direction - make the "cart" column go on top) */
+
+@media (max-width:800px){
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-25{
+        margin-bottom:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+    <div id="topo">
+        <div id="logo">
+            <a href="./index.html"></a>
+                <img src="./img"/>
+            </div>
+
+        <div id="icons">
+            <a href="carrinho.php"></a>
+            <img src="./img/"/>
+        </div>
+
+        <div id="domination">
+            <div class="row">
+                <div class="col-75">
+                    <div class="container">
+
+            <form action="/action.page.php">
+            
+            <div class="row">
+            <div class="col-50">
+                <h3>Informações de Entrega</h3>
+            <label for="fname"><i class="fa fa-user"></i>Nome Completo</label>
+            <input type="text" id="fname" name="nomecomp" placeholder="Ex.:Rodrigo S.S. Bustilho">
+            <label for="email"><i class="fa fa-envelope"></i>Email</label>
+            <input type="text" id="email" name="email" placeholder=Ex.:leonardopatterman@gmail.com>
+            <label for="adr"><i class="fa fa-address-card-o"></i>Endereço</label>
+            <input type="text" id="end" name="end" placeholder="Ex.: Av. Felipete de Nóbrega">
+            <label for="city"><i class="fa fa-instituion"></i>Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Ex.: Duque de Caxias">
+
+            <div class="row">
+                <div class="col-50">
+                    <label for="state">Estado</label>
+                    <input type="text" id="estado" name="estado" placeholder="Ex.: RJ">
+                    </div>
+
+                    <div class="col-50">
+                        <label for="zip">CEP</label>
+                        <input type="text" id="cep" name="cep" placeholder="Ex.:25555-310">
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-50">
+                        <h3>Pagamento</h3>
+                        <label for="fname">Formas de Pagamento</label>
+                        <div class="icon-container">
+                            <img src="./img/" width="50%;" />
+                            </div>
+                            <label for="cname">Nome no Cartão</label>
+                            <input type="text" id="cardnome" name="cardnome" placeholder="Ex.: Mateus B. Santana">
+                            <label for="ccnum">Número do Cartão</label>
+                            <input type="text" id="cardnum" name="cardnum" placeholder="Ex.: 1111-2222-3333-4444">
+                            <label for="expmonth">Validade do Cartão</label>
+                            <input type="text" id="cardvalano" name="cardvalano" placeholder="Ex.:2021">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="Ex.:352">
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr">Li e concordo com os <a href="termo.html">Termos de Serviço</a>
+                            </label>
+                            <input type="submit" value="CONFIRMAR" class="btn">
+                        </form>
+                        </div>
+                        </div>
+                        </div>
+                        
+    </div>
+</body>
+</html>

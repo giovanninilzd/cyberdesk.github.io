@@ -1,0 +1,116 @@
+.cards{
+    
+    display: flex;
+   
+}
+
+.cards ul{
+    display: flex;
+    text-align: center;
+}
+
+li.card{
+
+    list-style-type: none;
+    height: 415px;
+    max-width: 2500px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 15px;
+
+    
+}
+
+button.buy{
+    width: 150px;
+    margin:auto;
+    padding: 1rem;
+    border:0;
+    border-radius: 8px 6px 4px 8px;
+    background-color:rgb(85, 25, 85);
+    color: rgb(255, 255, 255);
+    transition: .4s
+}
+
+button.buy:hover{
+    background-color: violet;
+}
+
+li.card img{
+    width: 150px;
+    margin: auto;
+    margin-top:20px;
+}
+
+
+
+#promotions{
+    max-width: 1250px;
+    margin:auto;
+    background-color: #26053C;
+    text-align: center;
+    padding: 0 20px;
+   
+}
+
+.card h1{
+	font-family:'roboto';
+	font-size:15px;
+    font-weight: bold;
+    margin:auto;
+    margin-top:-20px;
+    color:#333333;
+    text-align:center;
+}
+.card h2{
+    font-family:'verdana';
+    font-size:12px;
+    margin:auto;
+    text-align:left;
+    margin-left: 10px;
+    margin-top:-10px;
+    text-decoration: line-through;
+    color:#706e6e
+
+}
+.card h3{
+    font-family: 'arial';
+    font-size:30px;
+    text-align: center;
+    color:#1E90FF;
+    font-weight: bold;
+    margin:auto;
+
+
+}
+
+h2{
+    font-family: 'arial';
+    font-weight: bold;
+    color:white;
+    margin:auto;
+}
+
+@media(max-width: 800px){
+    .cards{
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .cards ul{
+        display: block;
+        margin: auto
+    }
+
+    li.card{
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+    #promotions{
+      display: block;
+    }
+    
+   
+}

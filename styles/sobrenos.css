@@ -1,0 +1,29 @@
+#container{
+	width:880px;
+    height:auto;
+    display:table;
+    margin:auto;
+    margin-top:150px;
+    background-color:#ffffff;
+    padding:10px;	
+}
+
+#conteudo{
+    width:880px;
+    min-height:50px;
+    float:right;
+    margin:30px 0 30px 0;
+}
+
+#container img{
+    width: 50px;
+}
+#container h1{
+    color: #970BC2;
+    font-family: 'arial';
+    font-size:30px;
+    font-weight: bold;
+    margin:auto;
+    margin-top:-44px;
+    margin-left:50px;
+}
